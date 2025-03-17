@@ -104,7 +104,6 @@ public class EmployeeRepositoryTest {
 	@Order(4)
 	@DisplayName("Fetch Employee By Id Test For Null Object")
 	public void givenEmployeeId_whenFetchEmpObj_thenReturnFetchNullEmpObj() {
-
 		Employee savedEmp = employeeRepository.save(emp);
 		long id = 101;
 		Optional<Employee> empOptional = employeeRepository.findById(id);
